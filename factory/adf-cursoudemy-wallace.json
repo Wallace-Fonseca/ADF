@@ -1,0 +1,9 @@
+{
+	"name": "adf-cursoudemy-wallace",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5e5c2004-92ef-4dca-8f37-e3be1e0817ef",
+		"tenantId": "d5f98eec-4955-4114-b38e-dcef746fef23"
+	}
+}
