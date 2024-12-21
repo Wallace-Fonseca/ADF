@@ -8,9 +8,6 @@
 		"ls_azuresql_password": {
 			"value": ""
 		},
-		"ls_datalake_accountKey": {
-			"value": ""
-		},
 		"ls_azuresql_properties_typeProperties_server": {
 			"value": "sql-cursoudemy-wallace.database.windows.net"
 		},
