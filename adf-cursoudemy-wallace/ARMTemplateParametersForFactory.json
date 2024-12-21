@@ -22,6 +22,9 @@
 		},
 		"ls_datalake_properties_typeProperties_url": {
 			"value": "https://dlscursoudemywallace.dfs.core.windows.net/"
+		},
+		"tr_storage_events_properties_typeProperties_scope": {
+			"value": "/subscriptions/420fc99f-814b-4e12-952a-7973245d575f/resourceGroups/rg-curso-udemy/providers/Microsoft.Storage/storageAccounts/dlscursoudemywallace"
 		}
 	}
 }
