@@ -34,6 +34,10 @@
 		"tr_storage_events_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/420fc99f-814b-4e12-952a-7973245d575f/resourceGroups/rg-curso-udemy/providers/Microsoft.Storage/storageAccounts/dlscursoudemywallace"
+		},
+		"ls_key_vault_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://keyvaltadfcursoudemy.vault.azure.net/"
 		}
 	},
 	"variables": {
@@ -2173,6 +2177,19 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/pipeline_demo_10')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/ls_key_vault')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureKeyVault",
+				"typeProperties": {
+					"baseUrl": "[parameters('ls_key_vault_properties_typeProperties_baseUrl')]"
+				}
+			},
+			"dependsOn": []
 		}
 	]
 }

@@ -35,6 +35,10 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/420fc99f-814b-4e12-952a-7973245d575f/resourceGroups/rg-curso-udemy/providers/Microsoft.Storage/storageAccounts/dlscursoudemywallace"
 		},
+		"ls_key_vault_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://keyvaltadfcursoudemy.vault.azure.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -79,6 +83,9 @@
 					},
 					"ls_datalake_properties_typeProperties_url": {
 						"value": "[parameters('ls_datalake_properties_typeProperties_url')]"
+					},
+					"ls_key_vault_properties_typeProperties_baseUrl": {
+						"value": "[parameters('ls_key_vault_properties_typeProperties_baseUrl')]"
 					},
 					"tr_storage_events_properties_typeProperties_scope": {
 						"value": "[parameters('tr_storage_events_properties_typeProperties_scope')]"

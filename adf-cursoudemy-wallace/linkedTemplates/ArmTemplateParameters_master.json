@@ -26,6 +26,9 @@
 		"tr_storage_events_properties_typeProperties_scope": {
 			"value": "/subscriptions/420fc99f-814b-4e12-952a-7973245d575f/resourceGroups/rg-curso-udemy/providers/Microsoft.Storage/storageAccounts/dlscursoudemywallace"
 		},
+		"ls_key_vault_properties_typeProperties_baseUrl": {
+			"value": "https://keyvaltadfcursoudemy.vault.azure.net/"
+		},
 		"containerUri": {
 			"value": ""
 		},
