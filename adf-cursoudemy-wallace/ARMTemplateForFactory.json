@@ -1708,10 +1708,9 @@
 					"elapsedTimeMetric": {}
 				},
 				"folder": {
-					"name": "handson_03"
+					"name": "handson_3"
 				},
-				"annotations": [],
-				"lastPublishTime": "2024-12-21T03:43:52Z"
+				"annotations": []
 			},
 			"dependsOn": []
 		},
@@ -1735,10 +1734,9 @@
 					"elapsedTimeMetric": {}
 				},
 				"folder": {
-					"name": "handson_03"
+					"name": "handson_3"
 				},
-				"annotations": [],
-				"lastPublishTime": "2024-12-21T03:43:52Z"
+				"annotations": []
 			},
 			"dependsOn": []
 		},
@@ -2074,6 +2072,26 @@
 					"accountKey": {
 						"type": "SecureString",
 						"value": "[parameters('ls_datalake_accountKey')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/tr_schedule')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 1,
+						"startTime": "2024-12-19T00:54:00",
+						"timeZone": "E. South America Standard Time"
 					}
 				}
 			},
